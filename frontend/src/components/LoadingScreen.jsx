@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, CircularProgress, keyframes } from '@mui/material';
+import abnosaLogoLight from '../assets/abnosa-logo-light.jpg';
 
 // Define keyframes for animations
 const pulse = keyframes`
@@ -18,10 +19,9 @@ const pulse = keyframes`
 `;
 
 const LoadingScreen = () => {
-  // Hardcoded colors to ensure it works outside ThemeProvider (e.g. in index.js)
   const colors = {
-    primary: '#7A1F3D',
-    secondary: '#C5A93C',
+    primary: '#1B5E20',
+    secondary: '#F57C00',
     text: '#212529',
     background: '#ffffff'
   };
@@ -50,33 +50,19 @@ const LoadingScreen = () => {
           animation: `${pulse} 2s infinite ease-in-out`,
         }}
       >
-        <Typography
-          variant="h3"
-          component="h1"
+        <Box
+          component="img"
+          src={abnosaLogoLight}
+          alt="Abnosa Cafeteria"
           sx={{
-            fontWeight: 'bold',
-            fontFamily: '"Tajawal", "Roboto", "Helvetica", "Arial", sans-serif',
-            marginBottom: 0.5,
-            letterSpacing: '1px',
-            textShadow: '0px 2px 4px rgba(0,0,0,0.1)',
+            height: 120,
+            width: 'auto',
+            mb: 3,
+            borderRadius: '12px',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.12)',
           }}
-        >
-          <span style={{ color: '#1A1A1A' }}>FOOD</span>{' '}
-          <span style={{ color: colors.secondary }}>Zone</span>
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          sx={{
-            color: colors.primary,
-            fontWeight: 600,
-            letterSpacing: '2px',
-            marginBottom: 3,
-            fontSize: '0.9rem'
-          }}
-        >
-          RESTAURANT & CAFE
-        </Typography>
-        
+        />
+
         <CircularProgress 
           size={48}
           thickness={4}

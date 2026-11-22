@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Box, Container, Paper, Typography, Grid, useTheme } from '@mui/material';
@@ -72,7 +72,7 @@ const AuthLayout = () => {
               borderRadius: '16px',
               backgroundColor: 'rgba(255, 255, 255, 0.96)',
               backdropFilter: 'blur(10px)',
-              borderTop: '5px solid #7A1F3D',
+              borderTop: '5px solid #1B5E20',
               width: '100%',
               maxWidth: '450px',
             }}

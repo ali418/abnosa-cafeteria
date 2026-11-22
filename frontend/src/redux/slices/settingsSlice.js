@@ -1,11 +1,11 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+﻿import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import apiService from '../../api/apiService';
 
 const initialState = {
   themeMode: 'light',
   language: 'ar',
   store: {
-    name: 'FOOD Zone',
+    name: 'Abnosa Cafeteria',
     email: '',
     phone: '',
     address: '',

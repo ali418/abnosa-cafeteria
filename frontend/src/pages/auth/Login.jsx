@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { saveAuthData } from '../../services/authService';
 import {
-  Avatar,
   Button,
   TextField,
   FormControlLabel,
@@ -19,11 +18,11 @@ import {
   Alert,
 } from '@mui/material';
 import {
-  LockOutlined as LockOutlinedIcon,
   Visibility,
   VisibilityOff,
 } from '@mui/icons-material';
 import { useEffect } from 'react';
+import abnosaLogoLight from '../../assets/abnosa-logo-light.jpg';
 
 // Redux actions
 import { login } from '../../redux/slices/authSlice';
@@ -110,9 +109,18 @@ const Login = () => {
         width: '100%',
       }}
     >
-      <Avatar sx={{ m: 1, bgcolor: '#7A1F3D', width: 56, height: 56 }}>
-        <LockOutlinedIcon sx={{ fontSize: 30, color: '#C5A93C' }} />
-      </Avatar>
+      <Box
+        component="img"
+        src={abnosaLogoLight}
+        alt="Abnosa Cafeteria"
+        sx={{
+          height: 90,
+          width: 'auto',
+          mb: 1,
+          borderRadius: '10px',
+          boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+        }}
+      />
       <Typography component="h1" variant="h5" sx={{ fontFamily: '"Tajawal", sans-serif', fontWeight: 'bold', mb: 3 }}>
         {t('login')}
       </Typography>
@@ -139,11 +147,11 @@ const Login = () => {
           sx={{
             '& .MuiOutlinedInput-root': {
               '&.Mui-focused fieldset': {
-                borderColor: '#7A1F3D',
+                borderColor: '#1B5E20',
               },
             },
             '& .MuiInputLabel-root.Mui-focused': {
-              color: '#7A1F3D',
+              color: '#1B5E20',
             },
           }}
         />
@@ -175,11 +183,11 @@ const Login = () => {
           sx={{
             '& .MuiOutlinedInput-root': {
               '&.Mui-focused fieldset': {
-                borderColor: '#7A1F3D',
+                borderColor: '#1B5E20',
               },
             },
             '& .MuiInputLabel-root.Mui-focused': {
-              color: '#7A1F3D',
+              color: '#1B5E20',
             },
           }}
         />
@@ -191,9 +199,9 @@ const Login = () => {
               onChange={handleChange}
               disabled={loading}
               sx={{
-                color: '#7A1F3D',
+                color: '#1B5E20',
                 '&.Mui-checked': {
-                  color: '#7A1F3D',
+                  color: '#1B5E20',
                 },
               }}
             />
@@ -207,13 +215,13 @@ const Login = () => {
           sx={{
             mt: 3,
             mb: 2,
-            bgcolor: '#7A1F3D',
+            bgcolor: '#1B5E20',
             color: '#fff',
             fontWeight: 'bold',
             fontSize: '1.1rem',
             py: 1.2,
             '&:hover': {
-              bgcolor: '#5C0F2D',
+              bgcolor: '#003300',
             },
             fontFamily: '"Tajawal", sans-serif',
           }}
@@ -227,7 +235,7 @@ const Login = () => {
               component={RouterLink} 
               to="/forgot-password" 
               variant="body2"
-              sx={{ color: '#7A1F3D', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}
+              sx={{ color: '#1B5E20', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}
             >
               {t('forgotYourPassword')}
             </Link>

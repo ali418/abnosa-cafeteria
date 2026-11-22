@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   Box,
@@ -56,8 +56,8 @@ import {
 } from 'recharts';
 import apiService from '../api/apiService';
 
-// Colors for charts - updated with Food Zone burgundy and mustard palette
-const COLORS = ['#7A1F3D', '#C5A93C', '#9B3A5A', '#1A1A1A', '#5C0F2D'];
+// Colors for charts - updated with Abnosa Green and mustard palette
+const COLORS = ['#1B5E20', '#C5A93C', '#2E7D32', '#1A1A1A', '#003300'];
 
 const Dashboard = () => {
   const { t, i18n } = useTranslation('dashboard');
@@ -128,12 +128,12 @@ const Dashboard = () => {
             left: 0,
             width: '4px',
             height: '100%',
-            background: 'linear-gradient(to bottom, #7A1F3D, #C5A93C)'
+            background: 'linear-gradient(to bottom, #1B5E20, #C5A93C)'
           }
         }}>
           <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 500 }}>{label}</Typography>
           <Typography variant="subtitle2" sx={{ mt: 0.5, color: '#000', fontWeight: 600 }}>
-            {t('revenue')}: <span style={{ color: '#7A1F3D' }}>{formatCurrency(val)}</span>
+            {t('revenue')}: <span style={{ color: '#1B5E20' }}>{formatCurrency(val)}</span>
           </Typography>
         </Paper>
       );
@@ -389,21 +389,21 @@ const Dashboard = () => {
       title: t('todaySales'),
       value: `${currency.symbol} ${Number(todaySalesAmount || 0).toFixed(2)}`,
       icon: <TrendingUp />,
-      color: '#7A1F3D', // Food Zone Burgundy
+      color: '#1B5E20', // Abnosa Green
       onClick: () => navigate('/sales'),
     },
     {
       title: t('totalCustomers'),
       value: String(totalCustomers),
       icon: <People />,
-      color: '#C5A93C', // Food Zone Mustard
+      color: '#F57C00', // Abnosa Orange
       onClick: () => navigate('/customers'),
     },
     {
       title: t('totalProducts'),
       value: String(totalProducts),
       icon: <Inventory />,
-      color: '#9B3A5A', // Food Zone Burgundy light
+      color: '#2E7D32', // Abnosa Green light
       onClick: () => navigate('/products'),
     },
     // Low Stock card removed as requested

@@ -146,16 +146,16 @@ const App = () => {
       palette: {
         mode: themeMode,
         primary: {
-          main: '#7A1F3D', // اللون البورغندي المميز لـ Food Zone
-          light: '#9B3A5A',
-          dark: '#5C0F2D',
+          main: '#1B5E20', // أخضر غامق - Abnosa Cafeteria
+          light: '#4CAF50',
+          dark: '#003300',
           contrastText: '#ffffff'
         },
         secondary: {
-          main: '#C5A93C', // اللون الخردلي الذهبي لـ Food Zone
-          light: '#DFC866',
-          dark: '#9E8323',
-          contrastText: '#000000'
+          main: '#F57C00', // برتقالي/ذهبي - Abnosa Cafeteria
+          light: '#FFB74D',
+          dark: '#E65100',
+          contrastText: '#ffffff'
         },
         background: {
           default: '#ffffff',

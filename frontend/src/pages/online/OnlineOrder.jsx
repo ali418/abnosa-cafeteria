@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { selectCurrency, selectStoreSettings } from '../../redux/slices/settingsSlice';
@@ -1003,7 +1003,7 @@ const OnlineOrder = () => {
                   <Typography 
                     variant="h6" 
                     sx={{ 
-                      color: '#7A1F3D', 
+                      color: '#1B5E20', 
                       fontWeight: 'bold',
                       fontSize: '1.1rem'
                     }}
@@ -1262,10 +1262,10 @@ const OnlineOrder = () => {
                     sx={{
                       p: 2,
                       cursor: 'pointer',
-                      border: customerInfo.paymentMethod === 'cashOnDelivery' ? '2px solid #7A1F3D' : '1px solid #e0e0e0',
+                      border: customerInfo.paymentMethod === 'cashOnDelivery' ? '2px solid #1B5E20' : '1px solid #e0e0e0',
                       borderRadius: 2,
                       transition: 'all 0.3s ease',
-                      '&:hover': { borderColor: '#7A1F3D' }
+                      '&:hover': { borderColor: '#1B5E20' }
                     }}
                     onClick={() => handlePaymentMethodChange({ target: { value: 'cashOnDelivery' } })}
                   >
@@ -1275,7 +1275,7 @@ const OnlineOrder = () => {
                         onChange={handlePaymentMethodChange}
                         value="cashOnDelivery"
                         name="payment-method-radio"
-                        sx={{ color: '#7A1F3D', '&.Mui-checked': { color: '#7A1F3D' } }}
+                        sx={{ color: '#1B5E20', '&.Mui-checked': { color: '#1B5E20' } }}
                       />
                       <Box>
                         <Typography variant="subtitle1">{t('cashOnDelivery', 'Ø§Ù„Ø¯ÙØ¹ Ø¹Ù†Ø¯ Ø§Ù„ØªÙˆØµÙŠÙ„')}</Typography>
@@ -1293,10 +1293,10 @@ const OnlineOrder = () => {
                     sx={{
                       p: 2,
                       cursor: 'pointer',
-                      border: customerInfo.paymentMethod === 'mobileMoney' ? '2px solid #7A1F3D' : '1px solid #e0e0e0',
+                      border: customerInfo.paymentMethod === 'mobileMoney' ? '2px solid #1B5E20' : '1px solid #e0e0e0',
                       borderRadius: 2,
                       transition: 'all 0.3s ease',
-                      '&:hover': { borderColor: '#7A1F3D' }
+                      '&:hover': { borderColor: '#1B5E20' }
                     }}
                     onClick={() => handlePaymentMethodChange({ target: { value: 'mobileMoney' } })}
                   >
@@ -1306,7 +1306,7 @@ const OnlineOrder = () => {
                         onChange={handlePaymentMethodChange}
                         value="mobileMoney"
                         name="payment-method-radio"
-                        sx={{ color: '#7A1F3D', '&.Mui-checked': { color: '#7A1F3D' } }}
+                        sx={{ color: '#1B5E20', '&.Mui-checked': { color: '#1B5E20' } }}
                       />
                       <Box>
                         <Typography variant="subtitle1">{t('mobileMoney', 'Ø§Ù„Ø¯ÙØ¹ Ø¹Ø¨Ø± Ø§Ù„Ù…ÙˆØ¨Ø§ÙŠÙ„')}</Typography>
@@ -1329,9 +1329,9 @@ const OnlineOrder = () => {
                 mt: 2,
                 borderRadius: 2,
                 backgroundColor: 'rgba(122, 31, 61, 0.1)',
-                borderColor: '#7A1F3D',
+                borderColor: '#1B5E20',
                 '& .MuiAlert-icon': {
-                  color: '#7A1F3D'
+                  color: '#1B5E20'
                 }
               }}
             >
@@ -1419,8 +1419,8 @@ const OnlineOrder = () => {
                           startIcon={<Payment />}
                           onClick={() => openPaymentApp(customerInfo.mobilePaymentProvider)}
                           sx={{ 
-                            bgcolor: '#7A1F3D', 
-                            '&:hover': { bgcolor: '#5C0F2D' },
+                            bgcolor: '#1B5E20', 
+                            '&:hover': { bgcolor: '#003300' },
                             color: '#000',
                             fontWeight: 'bold'
                           }}
@@ -1443,9 +1443,9 @@ const OnlineOrder = () => {
                           component="label"
                           startIcon={<Receipt />}
                           sx={{ 
-                            borderColor: '#7A1F3D', 
-                            color: '#7A1F3D',
-                            '&:hover': { borderColor: '#5C0F2D', backgroundColor: 'rgba(122, 31, 61, 0.08)' }
+                            borderColor: '#1B5E20', 
+                            color: '#1B5E20',
+                            '&:hover': { borderColor: '#003300', backgroundColor: 'rgba(122, 31, 61, 0.08)' }
                           }}
                         >
                           {t('uploadReceiptImage', 'ØªØ­Ù…ÙŠÙ„ ØµÙˆØ±Ø© Ø§Ù„Ø¥ÙŠØµØ§Ù„')}
@@ -1708,7 +1708,7 @@ const OnlineOrder = () => {
                     InputProps={{
                       startAdornment: (
                         <InputAdornment position="start">
-                          <Search sx={{ color: '#7A1F3D' }} />
+                          <Search sx={{ color: '#1B5E20' }} />
                         </InputAdornment>
                       ),
                     }}
@@ -1717,15 +1717,15 @@ const OnlineOrder = () => {
                         borderRadius: '12px',
                         transition: 'all 0.3s ease',
                         '&:hover fieldset': {
-                          borderColor: '#7A1F3D',
+                          borderColor: '#1B5E20',
                         },
                         '&.Mui-focused fieldset': {
-                          borderColor: '#7A1F3D',
+                          borderColor: '#1B5E20',
                           borderWidth: 2,
                         },
                       },
                       '& .MuiInputLabel-outlined.Mui-focused': {
-                        color: '#7A1F3D',
+                        color: '#1B5E20',
                       },
                     }}
                   />
@@ -1739,10 +1739,10 @@ const OnlineOrder = () => {
                       sx={{ 
                         borderRadius: '12px',
                         '&:hover .MuiOutlinedInput-notchedOutline': {
-                          borderColor: '#7A1F3D',
+                          borderColor: '#1B5E20',
                         },
                         '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                          borderColor: '#7A1F3D',
+                          borderColor: '#1B5E20',
                           borderWidth: 2,
                         },
                         '& .MuiSelect-select': {
@@ -1796,7 +1796,7 @@ const OnlineOrder = () => {
                 <Box 
                   sx={{ 
                     p: 2, 
-                    background: 'linear-gradient(45deg, #7A1F3D 30%, #9B3A5A 90%)',
+                    background: 'linear-gradient(45deg, #1B5E20 30%, #2E7D32 90%)',
                     color: '#fff',
                     display: 'flex',
                     alignItems: 'center',
@@ -1835,11 +1835,11 @@ const OnlineOrder = () => {
                   sx={{ 
                     borderRadius: '12px', 
                     py: 1.5,
-                    background: 'linear-gradient(45deg, #7A1F3D 30%, #9B3A5A 90%)',
+                    background: 'linear-gradient(45deg, #1B5E20 30%, #2E7D32 90%)',
                     color: '#000',
                     fontWeight: 'bold',
                     '&:hover': {
-                      background: 'linear-gradient(45deg, #5C0F2D 30%, #8A2F4F 90%)',
+                      background: 'linear-gradient(45deg, #003300 30%, #8A2F4F 90%)',
                       boxShadow: '0 6px 15px rgba(122, 31, 61, 0.4)',
                       transform: 'translateY(-2px)'
                     },
@@ -1863,7 +1863,7 @@ const OnlineOrder = () => {
             </Grid>
             <Grid item xs={12} md={4}>
               <Paper sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 3, overflow: 'hidden', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.08)' }}>
-                <Box sx={{ p: 2, background: 'linear-gradient(45deg, #7A1F3D 30%, #9B3A5A 90%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <Box sx={{ p: 2, background: 'linear-gradient(45deg, #1B5E20 30%, #2E7D32 90%)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                   <Typography variant="h6" sx={{ fontWeight: 'bold', textShadow: '1px 1px 2px rgba(0,0,0,0.1)', color: '#fff' }}>
                     <ShoppingCart sx={{ mr: 1, verticalAlign: 'middle', color: '#fff' }} />
                     {t('yourOrder', 'Your Order')}
@@ -1921,7 +1921,7 @@ const OnlineOrder = () => {
         elevation={3} 
         sx={{ 
           mb: 3, 
-          background: 'linear-gradient(45deg, #7A1F3D 30%, #9B3A5A 90%)',
+          background: 'linear-gradient(45deg, #1B5E20 30%, #2E7D32 90%)',
           borderRadius: '0 0 16px 16px'
         }}
       >
@@ -1992,10 +1992,10 @@ const OnlineOrder = () => {
                 alternativeLabel
                 sx={{
                   '& .MuiStepLabel-root .Mui-completed': {
-                    color: '#7A1F3D', // golden color for completed steps
+                    color: '#1B5E20', // golden color for completed steps
                   },
                   '& .MuiStepLabel-root .Mui-active': {
-                    color: '#7A1F3D', // golden color for active step
+                    color: '#1B5E20', // golden color for active step
                   },
                   '& .MuiStepLabel-label.Mui-active.MuiStepLabel-alternativeLabel': {
                     color: 'rgba(0, 0, 0, 0.87)', // darker text for active step
@@ -2105,7 +2105,7 @@ const OnlineOrder = () => {
           sx={{ 
             textAlign: 'center',
             pb: 1,
-            background: 'linear-gradient(45deg, #7A1F3D 30%, #9B3A5A 90%)',
+            background: 'linear-gradient(45deg, #1B5E20 30%, #2E7D32 90%)',
             color: '#000',
             fontWeight: 'bold'
           }}

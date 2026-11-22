@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Box, Container, Typography, Paper, Grid } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 // import { QRCodeSVG } from 'qrcode.react';
@@ -57,7 +57,7 @@ const QRCodePage = () => {
                   left: -2,
                   right: -2,
                   bottom: -2,
-                  background: 'linear-gradient(45deg, #7A1F3D, #C5A93C)',
+                  background: 'linear-gradient(45deg, #1B5E20, #C5A93C)',
                   zIndex: -1,
                   borderRadius: 5,
                   opacity: 0.85
