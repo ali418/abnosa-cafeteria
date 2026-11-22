@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Use absolute path so dev server serves it directly -->
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1a4a1a" />
+    <meta
+      name="description"
+      content="Abnosa Cafeteria - اطلب طعامك المفضل أونلاين بكل سهولة من أبنوسا كافيتيريا. قائمة طعام متنوعة وخدمة سريعة. Order your favorite meals online."
+    />
+    <meta 
+      name="keywords" 
+      content="Abnosa Cafeteria, أبنوسا كافيتيريا, online order, طلب أونلاين, cafeteria, كافيتيريا, menu, منيو, delivery, توصيل"
+    />
+    <meta name="author" content="Abnosa Cafeteria" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Abnosa Cafeteria - الطلب عبر الإنترنت" />
+    <meta property="og:description" content="تصفح قائمة الطعام واطلب وجباتك ومشروباتك المفضلة أونلاين بكل سهولة وسرعة من أبنوسا كافيتيريا." />
+    <meta property="og:image" content="/logo512.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Abnosa Cafeteria - الطلب عبر الإنترنت" />
+    <meta property="twitter:description" content="تصفح قائمة الطعام واطلب وجباتك ومشروباتك المفضلة أونلاين بكل سهولة وسرعة من أبنوسا كافيتيريا." />
+    <meta property="twitter:image" content="/logo512.png" />
+
+    <!-- Structured Data (Schema.org) for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Cafeteria",
+      "name": "Abnosa Cafeteria",
+      "image": "/logo512.png",
+      "servesCuisine": "International, Cafe, Fast Food",
+      "menu": "/online-order",
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": {
+          "@type": "EntryPoint",
+          "inLanguage": ["ar", "en"],
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "deliveryMethod": [
+          "http://purl.org/goodrelations/v1#DeliveryModePickUp",
+          "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet"
+        ]
+      }
+    }
+    </script>
+
+    <!-- Use absolute path for PWA icon -->
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <!-- Use absolute path for manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <title>Abnosa Cafeteria | أبنوسا كافيتيريا</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
